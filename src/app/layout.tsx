@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Mrs_Saint_Delafield } from "next/font/google";
 import "./globals.css";
+import { ReCaptchaProvider } from "@/components/recaptcha-provider";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -40,7 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${calgary.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} ${calgary.variable} antialiased`}>
+          <ReCaptchaProvider>{children}</ReCaptchaProvider>
+        </body>
     </html>
   );
 }

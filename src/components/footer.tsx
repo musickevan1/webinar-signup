@@ -14,7 +14,15 @@ export function Footer() {
                   href="tel:417-705-5923"
                   className="transition-colors hover:text-accent"
                 >
-                  417-705-5923
+                  (417) 705-5923
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:417-881-5888"
+                  className="transition-colors hover:text-accent"
+                >
+                  (417) 881-5888
                 </a>
               </li>
               <li>

@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
@@ -19,6 +20,7 @@ export function HeroRegistrationForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const {
     register,
@@ -35,21 +37,31 @@ export function HeroRegistrationForm() {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = useCallback(async (data: FormData) => {
     setIsSubmitting(true);
     setError(null);
 
     try {
+      // Get reCAPTCHA token
+      let recaptchaToken = "";
+      if (executeRecaptcha) {
+        recaptchaToken = await executeRecaptcha("register");
+      }
+
       const response = await fetch("/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          ...data,
+          recaptchaToken,
+        }),
       });
 
       if (!response.ok) {
-        throw new Error("Registration failed. Please try again.");
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Registration failed. Please try again.");
       }
 
       setIsSuccess(true);
@@ -59,7 +71,7 @@ export function HeroRegistrationForm() {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  }, [executeRecaptcha, reset]);
 
   if (isSuccess) {
     return (
