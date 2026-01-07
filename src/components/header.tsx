@@ -17,7 +17,7 @@ export function Header() {
         </div>
 
         {/* X Separator */}
-        <span className="font-calgary text-2xl text-text-secondary">x</span>
+        <span className="text-sm text-text-secondary/70">x</span>
 
         {/* Realty ONE Group Grand Logo */}
         <div className="flex items-center">
