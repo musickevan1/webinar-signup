@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3 md:gap-12 md:text-left">
           {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold text-text-primary">
+            <h3 className="mb-3 text-lg font-semibold text-text-primary">
               Contact
             </h3>
             <ul className="space-y-3 text-sm text-text-secondary">
@@ -38,7 +38,7 @@ export function Footer() {
 
           {/* Location */}
           <div className="md:text-center">
-            <h3 className="mb-4 text-lg font-semibold text-text-primary">
+            <h3 className="mb-3 text-lg font-semibold text-text-primary">
               Location
             </h3>
             <p className="text-sm leading-relaxed text-text-secondary">
@@ -52,7 +52,7 @@ export function Footer() {
 
           {/* Social / Follow */}
           <div className="md:text-right">
-            <h3 className="mb-4 text-lg font-semibold text-text-primary">
+            <h3 className="mb-3 text-lg font-semibold text-text-primary">
               Follow Us
             </h3>
             <ul className="flex justify-center gap-5 text-sm text-text-secondary md:justify-end">
