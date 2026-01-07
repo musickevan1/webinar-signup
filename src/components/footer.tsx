@@ -1,10 +1,10 @@
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background px-4 py-12">
+    <footer className="border-t border-border bg-background px-4 py-10 sm:py-12">
       <div className="mx-auto max-w-5xl">
-        <div className="grid gap-10 sm:grid-cols-3 sm:gap-8">
+        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3 md:gap-12 md:text-left">
           {/* Contact Info */}
-          <div className="text-center sm:text-left">
+          <div>
             <h3 className="mb-4 text-lg font-semibold text-text-primary">
               Contact
             </h3>
@@ -37,11 +37,11 @@ export function Footer() {
           </div>
 
           {/* Location */}
-          <div className="text-center">
+          <div className="md:text-center">
             <h3 className="mb-4 text-lg font-semibold text-text-primary">
               Location
             </h3>
-            <p className="text-sm text-text-secondary">
+            <p className="text-sm leading-relaxed text-text-secondary">
               4560 S. Campbell Ave
               <br />
               Suite 120
@@ -51,11 +51,11 @@ export function Footer() {
           </div>
 
           {/* Social / Follow */}
-          <div className="text-center sm:text-right">
+          <div className="md:text-right">
             <h3 className="mb-4 text-lg font-semibold text-text-primary">
               Follow Us
             </h3>
-            <ul className="flex justify-center gap-5 text-sm text-text-secondary sm:justify-end">
+            <ul className="flex justify-center gap-5 text-sm text-text-secondary md:justify-end">
               <li>
                 <a
                   href="https://instagram.com/timlambertrealty"
@@ -130,14 +130,10 @@ export function Footer() {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-12 border-t border-border pt-8 text-center">
+        <div className="mt-10 border-t border-border pt-6 text-center sm:mt-12 sm:pt-8">
           <p className="text-xs text-text-secondary">
             © {new Date().getFullYear()} ZACKT Real Estate Group × Realty ONE
             Group Grand. All rights reserved.
-          </p>
-          <p className="mt-2 text-xs text-text-secondary">
-            Each office is independently owned and operated. Equal Housing
-            Opportunity.
           </p>
         </div>
       </div>
