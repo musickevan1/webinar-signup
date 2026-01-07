@@ -41,9 +41,9 @@ export function HostsSection() {
               <Image
                 src="/images/cropped-xzackt-logo.png"
                 alt="ZACKT Real Estate Group"
-                width={80}
-                height={35}
-                className="h-6 w-auto object-contain brightness-0 invert opacity-70"
+                width={180}
+                height={50}
+                className="h-12 w-auto object-contain brightness-0 invert opacity-70"
               />
             </div>
           </div>
