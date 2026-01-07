@@ -69,7 +69,8 @@ export function HostsSection() {
             </h3>
 
             {/* Title */}
-            <p className="mb-3 text-accent">Mortgage Broker</p>
+            <p className="mb-1 text-accent">Mortgage Broker</p>
+            <p className="mb-3 text-xs text-text-secondary">NMLS #2070053</p>
 
             {/* Company Logo */}
             <div className="flex items-center justify-center">
