@@ -5,10 +5,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3 md:gap-12 md:text-left">
           {/* Contact Info */}
           <div>
-            <h3 className="mb-3 text-lg font-semibold text-text-primary">
+            <h3 className="mb-2 text-lg font-semibold text-text-primary">
               Contact
             </h3>
-            <ul className="space-y-3 text-sm text-text-secondary">
+            <ul className="space-y-1 text-sm text-text-secondary">
               <li>
                 <a
                   href="tel:417-705-5923"
@@ -38,21 +38,19 @@ export function Footer() {
 
           {/* Location */}
           <div className="md:text-center">
-            <h3 className="mb-3 text-lg font-semibold text-text-primary">
+            <h3 className="mb-2 text-lg font-semibold text-text-primary">
               Location
             </h3>
-            <p className="text-sm leading-relaxed text-text-secondary">
-              4560 S. Campbell Ave
-              <br />
-              Suite 120
-              <br />
-              Springfield, MO 65810
-            </p>
+            <ul className="space-y-1 text-sm text-text-secondary">
+              <li>4560 S. Campbell Ave</li>
+              <li>Suite 120</li>
+              <li>Springfield, MO 65810</li>
+            </ul>
           </div>
 
           {/* Social / Follow */}
           <div className="md:text-right">
-            <h3 className="mb-3 text-lg font-semibold text-text-primary">
+            <h3 className="mb-2 text-lg font-semibold text-text-primary">
               Follow Us
             </h3>
             <ul className="flex justify-center gap-5 text-sm text-text-secondary md:justify-end">
@@ -125,7 +123,7 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            <p className="mt-4 text-sm text-text-secondary">@timlambertrealty</p>
+            <p className="mt-2 text-sm text-text-secondary">@timlambertrealty</p>
           </div>
         </div>
 
