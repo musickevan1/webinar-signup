@@ -130,7 +130,7 @@ export function Footer() {
         {/* Disclaimer */}
         <div className="mt-10 border-t border-border pt-6 text-center sm:mt-12 sm:pt-8">
           <p className="text-xs text-text-secondary">
-            © {new Date().getFullYear()} ZACKT Real Estate Group × Realty ONE
+            © {new Date().getFullYear()} XZACKT Real Estate Group × Realty ONE
             Group Grand. All rights reserved.
           </p>
         </div>

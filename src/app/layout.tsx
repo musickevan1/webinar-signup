@@ -15,7 +15,7 @@ const calgary = Mrs_Saint_Delafield({
 });
 
 export const metadata: Metadata = {
-  title: "Home Buying 101 | Free Webinar | ZACKT Real Estate Group",
+  title: "Home Buying 101 | Free Webinar | XZACKT Real Estate Group",
   description:
     "Join Tim Lambert and Dustin Sullins for a free webinar walking you through the home buying process, from pre-approval to closing table. January 29th, 6-7 PM CT.",
   keywords: [

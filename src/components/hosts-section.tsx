@@ -40,7 +40,7 @@ export function HostsSection() {
             <div className="flex items-center justify-center gap-2">
               <Image
                 src="/images/cropped-xzackt-logo.png"
-                alt="ZACKT Real Estate Group"
+                alt="XZACKT Real Estate Group"
                 width={180}
                 height={50}
                 className="h-12 w-auto object-contain brightness-0 invert opacity-70"
